@@ -1,3 +1,4 @@
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -15,4 +16,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+ <distributionManagement>
+    <repository>
+      <id>Visacard-releases</id>
+      <name>Visacard-releases</name>
+      <url>http://ec2-18-223-1-207.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/Visacard-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>Visacard-snapshots</id>
+      <name>Visacard-snapshots</name>
+      <url>http://ec2-18-223-1-207.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/Visacard-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
